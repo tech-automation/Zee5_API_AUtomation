@@ -1,0 +1,72 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "profileTagging",
+    "followListVisibility",
+    "followingListVisibility",
+    "adult",
+    "ageRange",
+    "lastUpdatedOn"
+  ],
+  "properties": {
+    "profileTagging": {
+      "$id": "#/properties/profileTagging",
+      "type": "integer",
+      "title": "The Profiletagging Schema",
+      "default": 0,
+      "examples": [
+        3
+      ]
+    },
+    "followListVisibility": {
+      "$id": "#/properties/followListVisibility",
+      "type": "integer",
+      "title": "The Followlistvisibility Schema",
+      "default": 0,
+      "examples": [
+        3
+      ]
+    },
+    "followingListVisibility": {
+      "$id": "#/properties/followingListVisibility",
+      "type": "integer",
+      "title": "The Followinglistvisibility Schema",
+      "default": 0,
+      "examples": [
+        3
+      ]
+    },
+    "adult": {
+      "$id": "#/properties/adult",
+      "type": "integer",
+      "title": "The Adult Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "ageRange": {
+      "$id": "#/properties/ageRange",
+      "type": "string",
+      "title": "The Agerange Schema",
+      "default": "",
+      "examples": [
+        "18-24"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "lastUpdatedOn": {
+      "$id": "#/properties/lastUpdatedOn",
+      "type": "integer",
+      "title": "The Lastupdatedon Schema",
+      "default": 0,
+      "examples": [
+        1564748266075
+      ]
+    }
+  }
+}
